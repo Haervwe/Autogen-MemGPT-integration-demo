@@ -2,11 +2,27 @@
 simple scritps for Integration of Autogen and memGPT to test differnt outcomes of LLM agents cooperation
 
 
+This repository serves as a versatile playground for testing the cooperation and integration of different Large Language Models (LLMs) such as Autogen and memGPT. By leveraging Autogen and memGPT packages, users can explore various outcomes and interactions between these LLM agents within a controlled environment.
+
+
 HOW TO USE:
 
+Requirements:
+  An OpenAI API endpoint or clone(LMStudio works well, its the software used for the testing)
+  Autogen and memGPT packages installed locally.
+    https://microsoft.github.io/autogen/  
+    https://memgpt.ai
+  For local LLM i recomed LMStudio for its simplicity and compatibility (specailly on amd hardware try out https://lmstudio.ai/rocm )
+
+
+
+Clone this repository or copy the code in the examples to run.
+
 Hook up your API in the scripts config
-modify the agents promts (using memgpt you should delete the agents if they will have different sistem promts and the same name since they are stored in a database when created)
-modify the task promt
+
+Modify the agents promts (using memgpt you should delete the agents if they will have different sistem promts and the same name since they are stored in a database when created)
+
+Modify the task promt
 
 run! and see if the hallucinate 
 
@@ -36,3 +52,12 @@ deepseek-coder-6.7B-instruct-GGUF
   Function Calling: not usable for memGPT, prone to forget autogen functions
   Coding: can write simple scripts the best, can modify documents, and kinda undesrtand the code, prone to halluciante nonsensical code when asked to resolve a complex task.
   Stor-Telling: incoherent
+
+
+  Resources:
+https://memgpt.readme.io/docs/autogen
+
+
+Purpose:
+
+This repository serves as a dynamic testing ground for experimenting with various LLM agents, aiming to understand their capabilities, limitations, and potential synergies. It facilitates exploration into how different models interact and perform across diverse tasks, offering insights into their behavior and efficacy in real-world applications. aimed to help anyone tryng to set it up for testing porpuses.
